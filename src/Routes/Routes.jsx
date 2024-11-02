@@ -11,6 +11,7 @@ import Bookings from "./Bookings/Bookings";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Contact from "./Contact/Contact";
 import AddFood from "./AddFood/AddFood";
+import UpdateFood from "./UpdateFood/UpdateFood";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,12 @@ const router = createBrowserRouter([
         {
           path : '/signUp',
           element : <SignUp></SignUp>
+        },
+
+        {
+          path: "/updateFood/:id",
+          element: <UpdateFood></UpdateFood> ,
+          loader: ({ params }) => fetch(`http://localhost:5000/food/${params.id}`),
         },
 
         {

@@ -8,6 +8,7 @@ import image5 from "../../assets/images/banner/katsu_rice.jfif";
 import image6 from "../../assets/images/banner/pizza.jfif";
 import image7 from "../../assets/images/banner/ramen.jfif";
 import image8 from "../../assets/images/banner/shawrma.jfif";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   const images = [image1, image2, image3, image4, image5, image6, image7, image8];
@@ -50,7 +51,7 @@ const Banner = () => {
           <div className="text-white md:space-y-2 lg:w-1/2">
           
             <div className="flex gap-3 lg:mt-10 mt-2">
-              <button className="btn rounded btn-ghost text-white hover:bg-red-500 border-none italic font-bold">Visit Now</button>
+              <Link to='/services'><button className="btn btn-ghost text-white hover:bg-red-500 border-none italic font-bold">Visit Now</button></Link>
               
             </div>
           </div>
