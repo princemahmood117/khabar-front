@@ -1,18 +1,17 @@
 import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
-// import { useContext } from "react";
-// import { AuthContext } from "../provider/AuthProvider";
+
 
 const NavBar = () => {
   const {logOut, user} = useAuth()
-  // const { logOut, user } = useContext(AuthContext);
+  
 
   const handleLogOut = () => {
     logOut()
       .then(() => {})
 
       .catch(() => {
-        // console.log(error);
+   
       });
   };
   const navBar = (
@@ -34,6 +33,10 @@ const NavBar = () => {
         <Link to='/contact'>Contact</Link>
       </li> 
 
+      <li className="font-bold">
+        <Link to='/addFood'>Add Food</Link>
+      </li> 
+
       { user ? 
         <>
           <li className="font-bold">
@@ -43,7 +46,7 @@ const NavBar = () => {
           <li>
             
             <Link className="font-bold" to="/bookings">
-              Bookings
+              Orders
             </Link>
           </li>
         </>
@@ -79,7 +82,7 @@ const NavBar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu z-50 menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl"
+            className="menu z-50 menu-sm dropdown-content bg-base-100 rounded-box  mt-3 w-52 p-2 shadow text-xl"
           >
             {navBar}
           </ul>
@@ -91,19 +94,13 @@ const NavBar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navBar}</ul>
       </div>
-      {/* <div className="navbar-end">
-        <a className="btn btn-outline">Appointment</a>
-      </div> */}
+  
 
       {
         user && <div>
           <p className="font-semibold text-green-400">Profile: {user.email}</p>
         </div>
       }
-
-      {/* <div className="navbar-end">
-        <a className="btn btn-outline">Appointment</a>
-      </div> */}
     </div>
   );
 };

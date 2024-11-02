@@ -9,6 +9,8 @@ import Services from "../Routes/Home/Services"
 import Error from "../Error/Error";
 import Bookings from "./Bookings/Bookings";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import Contact from "./Contact/Contact";
+import AddFood from "./AddFood/AddFood";
 
 const router = createBrowserRouter([
     {
@@ -49,6 +51,15 @@ const router = createBrowserRouter([
         {
           path : '/bookings',
           element : <PrivateRoute> <Bookings></Bookings> </PrivateRoute>
+        },
+        {
+          path : '/contact',
+          element :<Contact></Contact>
+        },
+
+        {
+          path: "/addFood",
+          element: <AddFood></AddFood>,
         },
       ]
     },
