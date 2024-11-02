@@ -98,7 +98,7 @@ const NavBar = () => {
 
       {
         user && <div>
-          <p className="font-semibold text-green-400">Profile: {user.email}</p>
+          <p className="font-semibold text-sm text-green-400">Profile: {user.email}</p>
         </div>
       }
     </div>
