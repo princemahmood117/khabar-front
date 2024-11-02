@@ -1,0 +1,69 @@
+[
+    {
+        "service_id": "01",
+        "title": "Regular Burger",
+        "img": "https://i.im.ge/2024/11/02/kkEftf.burgers.jpeg",
+        "price": "200.00",
+        "description": "A popular and mouthwatering choice, the chicken burger is crafted with a tender, flavorful chicken fillet as its star. This fillet, which can be fried to crispy perfection or grilled for a lighter touch, is complemented by fresh toppings like crisp lettuce, juicy tomato slices, and sometimes a slice of tangy pickles for an added kick. Typically, it's layered with creamy mayonnaise or a special sauce to enhance its taste and juiciness, all nestled in a soft, toasted sesame seed bun."
+    
+    },
+    {
+        "service_id": "02",
+        "title": "Chicken Leg",
+        "img": "https://i.im.ge/2024/11/02/kkxqy8.chicken-leg.jpeg",
+        "price": "150.00",
+        "description": "A flavorful and juicy chicken leg, seasoned with a blend of spices and either deep-fried to crispy perfection or roasted until golden-brown. The dark meat of the leg keeps it tender and succulent, offering a rich, savory taste. Often enjoyed as a standalone snack or paired with sides, the chicken leg piece is loved for its satisfying combination of crispy skin and juicy meat. Perfect for a quick bite or as part of a larger meal"
+
+    },
+    {
+        "service_id": "03",
+        "title": "Crucnchy Cheese Roll",
+        "img": "https://i.im.ge/2024/11/02/kkxsHh.crunchy.jpeg",
+        "price": "90.00",
+        "description": "A delightful snack featuring a creamy cheese filling wrapped in a thin, crispy shell. Each roll is packed with gooey, melted cheese and coated in breadcrumbs for an irresistible crunch. Fried or baked to golden perfection, the crunchy cheese roll offers a satisfying contrast between its crispy exterior and soft, cheesy center. Ideal as a party appetizer or a quick snack, it's a cheesy treat that’s hard to resist!"
+        
+    },
+    {
+        "service_id": "04",
+        "title": "French Fries",
+        "img": "https://i.im.ge/2024/11/02/kkx71M.french.jpeg",
+        "price": "120.00",
+        "description": "Classic potato sticks, cut thin and fried until golden and crispy on the outside, yet tender on the inside. Lightly salted to enhance their natural flavor, these fries are a perfect side dish or snack on their own. Often enjoyed with dips like ketchup, mayonnaise, or cheese sauce, French fries are a universally loved treat with a satisfying crunch in every bite!"
+        
+    },
+    {
+        "service_id": "05",
+        "title": "Katsu Rice",
+        "img": "https://i.im.ge/2024/11/02/kkxIZD.katsu-rice.jpeg",
+        "price": "230.00",
+        "description": "Katsu rice is a delicious Japanese dish consisting of a crispy, breaded cutlet, usually made from pork (tonkatsu) or chicken (chicken katsu), served over a bed of steaming white rice. The katsu is typically sliced into bite-sized pieces and drizzled with a rich tonkatsu sauce, which adds a savory and slightly sweet flavor. Often accompanied by a side of shredded cabbage or pickles, katsu rice combines the satisfying crunch of the cutlet with the comforting softness of the rice, making it a popular choice for a hearty meal."
+        
+    },
+    {
+        "service_id": "06",
+        "title": "Chicken Pizza",
+        "img": "https://i.im.ge/2024/11/02/kkxUo4.pizza.jpeg",
+        "price": "250.00",
+        "description": "Chicken pizza features a crispy crust topped with savory tomato sauce, melted mozzarella cheese, and tender pieces of seasoned chicken. It's often complemented by colorful vegetables like bell peppers and onions, along with herbs and spices for added flavor. This delicious dish combines the heartiness of pizza with the protein of chicken, making it a favorite choice for pizza lovers looking for something tasty and satisfying."
+        
+    },
+
+    {
+        "service_id": "07",
+        "title": "Chicken Ramen",
+        "img": "https://i.im.ge/2024/11/02/kkxhhC.ramen.jpeg",
+        "price": "220.00",
+        "description": "Chicken ramen is a comforting Japanese noodle soup that features tender, marinated chicken served in a savory, umami-rich broth. The dish includes soft, chewy ramen noodles, which absorb the flavorful broth. Common toppings include sliced green onions, nori (seaweed), and soft-boiled eggs, along with vegetables like bean sprouts or bok choy. With its combination of rich flavors and satisfying textures, chicken ramen is a beloved staple in Japanese cuisine, perfect for a hearty meal"
+        
+    },
+
+    {
+        "service_id": "08",
+        "title": "Chicken Shawarma",
+        "img": "https://i.im.ge/2024/11/02/kkxibq.shawrma.jpeg",
+        "price": "140.00",
+        "description": "Chicken shawarma is a popular Middle Eastern dish made with marinated chicken that's been slow-cooked on a vertical rotisserie, resulting in tender, flavorful meat. The chicken is typically seasoned with a blend of spices, including cumin, paprika, and garlic, giving it a deliciously aromatic profile. It's often served in warm pita bread or flatbreads, accompanied by fresh vegetables like tomatoes, cucumbers, and lettuce, and drizzled with tahini or garlic sauce. The combination of spices, textures, and flavors makes chicken shawarma a beloved street food and a satisfying meal option."
+        
+    }
+ 
+]
