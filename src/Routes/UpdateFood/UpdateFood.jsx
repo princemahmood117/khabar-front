@@ -36,7 +36,7 @@ const UpdateFood = () => {
         // (A) send the 'newCoffee' data to the server
     
         // have to send from client to server, so have to use server side's url where the data will be stored
-        fetch(`http://localhost:5000/food/${_id}`, {
+        fetch(`https://khabar-server.vercel.app/food/${_id}`, {
           // request will be sent to this url
           method: "PUT",
           headers: {

@@ -35,7 +35,7 @@ const Checkout = () => {
     // console.log(order);
 
 
-    fetch('http://localhost:5000/bookings',{
+    fetch('https://khabar-server.vercel.app/bookings',{
         method : 'POST',
         headers : {
             'content-type' : 'application/json'

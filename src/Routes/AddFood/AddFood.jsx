@@ -28,7 +28,7 @@ const AddFood = () => {
 
   
 
-    fetch("http://localhost:5000/food", {
+    fetch("https://khabar-server.vercel.app/food", {
       // request will be sent to this url
       method: "POST",
       headers: {

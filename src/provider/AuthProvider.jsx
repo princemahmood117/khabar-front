@@ -40,14 +40,14 @@ const AuthProvider = ({children}) => {
 
             if(currentUser) {
 
-                axios.post('http://localhost:5000/jwt',loggedEmail, {withCredentials : true})
+                axios.post('https://khabar-server.vercel.app/jwt',loggedEmail, {withCredentials : true})
                 .then(()=> {
                     // console.log('token response', res.data);
                 })
             }
 
             else {
-                axios.post('http://localhost:5000/logout', loggedEmail, {withCredentials : true} )
+                axios.post('https://khabar-server.vercel.app/logout', loggedEmail, {withCredentials : true} )
                 .then(() => {
                     // console.log(res.data);
                 })

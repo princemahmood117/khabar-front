@@ -46,13 +46,13 @@ const router = createBrowserRouter([
         {
           path: "/updateFood/:id",
           element: <UpdateFood></UpdateFood> ,
-          loader: ({ params }) => fetch(`http://localhost:5000/food/${params.id}`),
+          loader: ({ params }) => fetch(`https://khabar-server.vercel.app/food/${params.id}`),
         },
 
         {
           path: '/checkout/:id',
           element : <PrivateRoute> <Checkout></Checkout> </PrivateRoute>,
-          loader:({params})=> fetch(`http://localhost:5000/services/${params.id}`)
+          loader:({params})=> fetch(`https://khabar-server.vercel.app/services/${params.id}`)
         },
 
         {

@@ -16,7 +16,7 @@ const ServiceCard = ({ service, onDelete }) => {
       confirmButtonText: "Yes, confirm delete!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/food/${_id}`, {
+        fetch(`https://khabar-server.vercel.app/food/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

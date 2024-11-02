@@ -42,7 +42,7 @@ const Login = () => {
 
             // token will be generated and sent after user has been found
 
-            axios.post('http://localhost:5000/jwt',userInfo,{withCredentials:true})
+            axios.post('https://khabar-server.vercel.app/jwt',userInfo,{withCredentials:true})
             .then(res => {
                 // console.log(res.data);
 
