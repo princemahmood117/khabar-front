@@ -8,7 +8,7 @@ const AddFood = () => {
 
     const form = e.target;
 
-    const title = form.name.value;
+    const title = form.title.value;
     const quantity = form.quantity.value;
     const pickup = form.pickup.value;
     const taste = form.taste.value;
@@ -28,9 +28,6 @@ const AddFood = () => {
 
   
 
-    // (A) send the 'newCoffee' data to the server
-
-    // have to send from client to server, so have to use server side's url where the data will be stored
     fetch("http://localhost:5000/food", {
       // request will be sent to this url
       method: "POST",
@@ -44,7 +41,7 @@ const AddFood = () => {
         if (data.insertedId) {
           Swal.fire({
             title: "Success!",
-            text: "Coffee Added Successfully",
+            text: "Food Added",
             icon: "success",
             confirmButtonText: "Okay",
           });
@@ -58,7 +55,7 @@ const AddFood = () => {
 
       <div className="bg-[#F4F3F0] p-20">
         <h1 className="text-red-500 text-3xl text-center font-bold">
-          Add New Food
+          Add New Food 🥫 
         </h1>
 
         <form onSubmit={handleAddFood}>

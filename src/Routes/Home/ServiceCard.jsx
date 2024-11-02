@@ -6,7 +6,7 @@ const ServiceCard = ({ service }) => {
         <div className="card card-compact bg-base-100 w-full md:w-96 shadow-xl">
             <figure className="w-full h-48 md:h-60 overflow-hidden">
                 <img 
-                    className="w-full h-full object-cover" // Cover the container while maintaining aspect ratio
+                    className="w-full h-full object-cover" 
                     src={img} 
                     alt={title} 
                 />

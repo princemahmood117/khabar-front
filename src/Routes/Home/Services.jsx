@@ -1,24 +1,12 @@
 
-// import { useEffect, useState } from "react";
 import useServices from "../../hooks/useServices";
 import ServiceCard from "./ServiceCard";
 
 
 const Services = () => {
 
-    const services = useServices(); // using custom-hook for not duplicating
+    const services = useServices(); 
 
-    // const [services,setServices] = useState([])
-
-    // // loads services from the database
-
-    // useEffect(()=>{
-
-    //     fetch('http://localhost:5000/services')
-    //     .then(res=> res.json())
-    //     .then(data => setServices(data))
-
-    // },[])
     
     return (
         <div className="mt-4 p-2">

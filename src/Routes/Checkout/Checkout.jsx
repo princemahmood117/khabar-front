@@ -27,7 +27,9 @@ const Checkout = () => {
         serviceID : _id,
         service : title,
         price,
-        img
+        img,
+        title,
+        
     }
 
     // console.log(order);
@@ -47,7 +49,7 @@ const Checkout = () => {
         if (data.insertedId) {
             Swal.fire({
               title: "Success!",
-              text: "OrderConfirmed",
+              text: "Order Confirmed",
               icon: "success",
               confirmButtonText: "Done",
             });

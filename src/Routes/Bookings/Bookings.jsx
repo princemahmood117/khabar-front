@@ -16,19 +16,7 @@ const Bookings = () => {
   const url = `/bookings?email=${user?.email}`;
 
   useEffect(() => {
-    // fetch(url,{credentials:include})  // either can use this or axios
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //     setBookings(data);
-    //   });
-
-    
-    // same as fetch but with axios
-    // axios.get(url,{withCredentials:true})
-    // .then(res => {
-    //   setBookings(res.data)
-    // })
+ 
 
     axiosSecure.get(url)  // use of custom hook
     .then(res=> {
@@ -84,7 +72,7 @@ const Bookings = () => {
     })
     .then(res => res.json())
     .then(data => {
-      // console.log(data);
+   
 
       if(data.modifiedCount > 0) {
         // uptate state
@@ -118,8 +106,8 @@ const Bookings = () => {
                   <input type="checkbox" className="checkbox" />
                 </label> */}
               </th>
-              <th>Image display</th>
-              <th>Service Name</th>
+              <th>Image</th>
+              <th>Item Name</th>
               <th>Email</th>
               <th>Date</th>
               <th>Price</th>
