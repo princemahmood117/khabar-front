@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
 import useAuth from "../hooks/useAuth";
 // import { useContext } from "react";
 // import { AuthContext } from "../provider/AuthProvider";
@@ -27,16 +26,13 @@ const NavBar = () => {
       </li>
 
       <li className="font-bold">
-        <Link to="/services">Services</Link>
-      </li>
-      {/* 
-      <li className="font-bold">
-        <Link to='/blogs'>Blogs</Link>
+        <Link to="/services">All Foods</Link>
       </li>
 
+      
       <li className="font-bold">
         <Link to='/contact'>Contact</Link>
-      </li> */}
+      </li> 
 
       { user ? 
         <>
@@ -89,15 +85,25 @@ const NavBar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl">
-          <img src={logo} alt="" className="h-12 w-16 md:h-20 md:w-20" />
+          <img src='icon.png' alt="" className="h-12 w-16 md:h-20 md:w-20" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navBar}</ul>
       </div>
-      <div className="navbar-end">
+      {/* <div className="navbar-end">
         <a className="btn btn-outline">Appointment</a>
-      </div>
+      </div> */}
+
+      {
+        user && <div>
+          <p className="font-semibold text-green-400">Profile: {user.email}</p>
+        </div>
+      }
+
+      {/* <div className="navbar-end">
+        <a className="btn btn-outline">Appointment</a>
+      </div> */}
     </div>
   );
 };
